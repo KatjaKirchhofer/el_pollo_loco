@@ -1,0 +1,150 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    
+    
+}
+
+h1 {
+    font-family: 'Kirang Haerang';
+    font-size: 30px;
+}
+
+h2 {
+    font-family: 'Kirang Haerang';
+    font-size: 24px;
+    font-weight: normal;
+}
+
+
+.start-frame {
+    width: 720px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/* .start-frame {
+    background-color: white;
+} */
+
+.start-img {
+    width: 720px;
+    height: 100%;
+    background-image: url("img/9.Intro _ Outro Image/Start Screen/Opci¢n 1.png");
+    background-repeat: no-repeat;
+    background-size: 720px 480px;
+ 
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.d-none {
+    display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-weight: bold;   
+    font-size: 22px;
+    text-shadow: 2px 2px #ff0000;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: tomato;
+}
+
+.disciption-arreas {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255,255,255, 0.4);
+    width: 100%;
+    height: 50px;
+}
+
+.disription-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.button-arreas {
+    display: none;
+}
+
+@media(max-width: 720px) {
+    /* canvas {
+     width: 100vw;
+     height: 90vh;
+    } */
+    .startscreen {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .start-frame {
+        width: 100%;
+    }
+    .start-img {
+        width: 100%;
+        background-size: 100%;
+    }
+    button {
+        width: 100px;
+        height: 50px;
+        font-size: 18px;
+    }
+    h1 {
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+    body {
+        display: unset;
+    }
+    .button-arreas {
+        height: 10vh;
+        display: flex;
+    
+    }
+    .button-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+  }
+  canvas {
+    background-color: black;
+    display: block;
+}
+/* Smartphones ----------- */
+@media only screen and (max-width: 760px) {
+    canvas {
+        width: 100%;
+    }
+}
+/* Smartphones ----------- */
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
+    
+} 
